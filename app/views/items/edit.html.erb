@@ -1,0 +1,13 @@
+<h1>Edit Item</h1>
+<%= form_for @item do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+
+  <%= f.label :details %>
+  <%= f.text_area :details %>
+
+  <%= f.submit %>
+<% end %>

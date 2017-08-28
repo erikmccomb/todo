@@ -1,0 +1,13 @@
+<h1>New ToDo item</h1>
+<%= form_for @item do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+  <br>
+  <%= f.label :details %>
+  <%= f.text_area :details %>
+  <hr/>
+  <%= f.submit %>
+<% end %>
